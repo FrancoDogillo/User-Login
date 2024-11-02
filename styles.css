@@ -1,0 +1,152 @@
+/* General Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Wrapper Styling */
+.wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+  color: #1a73e8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2, h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Form Styling */
+form {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+form p {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button.btn {
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #155bb5;
+}
+
+.btn_container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+table th, table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: #f1f3f5;
+  color: #333;
+}
+
+table td {
+  background-color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Links */
+a.links {
+  color: #1a73e8;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+a.links:hover {
+  color: firebrick;
+  text-decoration: underline;
+}
+
+/* Container Styling */
+.container {
+  margin-top: 2rem;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .wrapper {
+      padding: 1rem;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  h2, h3 {
+      font-size: 1.4rem;
+  }
+
+  form, table {
+      font-size: 0.9rem;
+  }
+}
